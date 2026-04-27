@@ -1,1 +1,89 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global styles */
+
+:root {
+  --primary-color: #4f46e5;
+  --primary-light: #6366f1;
+  --secondary-color: #64748b;
+  --background-color: #f8fafc;
+  --text-color: #1e293b;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.lead {
+  font-size: 1.25rem;
+  color: var(--secondary-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-light);
+  border-color: var(--primary-light);
+}
+
+.alert-info {
+  background-color: #eef2ff;
+  border-color: #e0e7ff;
+  color: var(--primary-color);
+}
+
+.alert .btn-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  margin: -0.25rem 0;
+  border-radius: 0.25rem;
+}
+
+.alert .btn-link:hover {
+  background-color: rgba(79, 70, 229, 0.1);
+}
+
+.modal-content {
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.modal-header {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1.5rem;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.modal-footer {
+  border-top: 1px solid #e5e7eb;
+  padding: 1.5rem;
+}
+
+.form-control:focus {
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.25);
+}
